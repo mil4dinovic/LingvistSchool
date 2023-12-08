@@ -6,6 +6,9 @@ public abstract class Person {
     private String contactNumber;
     private Gender gender;
 
+    public Person(String name, String surname, String contactNumber, Gender gender) {
+    }
+
     public String getName(){
         return name;
     }

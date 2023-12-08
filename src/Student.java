@@ -1,8 +1,14 @@
 import enums.Education;
+import enums.Gender;
 
 public class Student extends Person{
     private Education education;
     private boolean oneOrMoreLanguages;
+    public Student(String name, String surname, String contactNumber, Gender gender, Education education, boolean oneOrMoreLanguages){
+        super(name, surname, contactNumber, gender);
+        this.education = education;
+        this.oneOrMoreLanguages = oneOrMoreLanguages;
+    }
     public Education getEducation(){
         return education;
     }
