@@ -7,6 +7,10 @@ public abstract class Person {
     private Gender gender;
 
     public Person(String name, String surname, String contactNumber, Gender gender) {
+        setContactNumber(contactNumber);
+        this.surname = surname;
+        this.name = name;
+        this.gender = gender;
     }
 
     public String getName(){

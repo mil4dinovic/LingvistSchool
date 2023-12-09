@@ -34,4 +34,8 @@ public class Owner extends Person{
     public void setYearsService(int yearsService){
         this.yearsService = yearsService;
     }
+    @Override
+    public String toString(){
+        return "Owner" + getContactNumber();
+    }
 }
