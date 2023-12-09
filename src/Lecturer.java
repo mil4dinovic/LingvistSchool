@@ -1,9 +1,18 @@
+import enums.Gender;
+
 import java.util.List;
 
 public class Lecturer extends Person{
     private List<String> languagesTeach;
     private int yearsOfExperience;
     private boolean hasExperience;
+
+    public Lecturer(String name, String surname, String contactNumber, Gender gender) {
+        super(name, surname, contactNumber, gender);
+        setLanguagesTeach(languagesTeach);
+        setYearsOfExperience(yearsOfExperience);
+        setHasExperience(hasExperience);
+    }
 
     public List<String> getLanguagesTeach(){
         return languagesTeach;
