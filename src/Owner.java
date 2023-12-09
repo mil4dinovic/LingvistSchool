@@ -1,7 +1,16 @@
+import enums.Gender;
+
 public class Owner extends Person{
     private String email;
     private int age;
     private int yearsService;
+
+    public Owner(String name, String surname, String contactNumber, Gender gender) {
+        super(name, surname, contactNumber, gender);
+        setAge(age);
+        setYearsService(yearsService);
+
+    }
 
     public String getEmail() {
         return email;
